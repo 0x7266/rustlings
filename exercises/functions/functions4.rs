@@ -7,21 +7,22 @@
 // in the signatures for now. If anything, this is a good way to peek ahead
 // to future exercises!)
 
-// I AM NOT DONE
-
 fn main() {
-    let original_price = 51;
+    let original_price: i8 = 51;
     println!("Your sale price is {}", sale_price(original_price));
 }
 
-fn sale_price(price: i32) -> {
+fn sale_price(price: i8) -> i8{
     if is_even(price) {
-        price - 10
+        // price - 10  // no semicolon
+        return price - 10;
     } else {
-        price - 3
+        // price - 3   // no semicolon
+        return price - 3;
     }
 }
 
-fn is_even(num: i32) -> bool {
-    num % 2 == 0
+fn is_even(num: i8) -> bool {
+    // num % 2 == 0    // no semicolon
+    return num % 2 == 0;
 }
