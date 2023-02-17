@@ -7,6 +7,6 @@ fn main() {
 }
 
 fn square(num: i32) -> i32 {
-    // num * num// no semicolon
+    // num * num    // no semicolon
     return num * num;
 }
